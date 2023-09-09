@@ -1,0 +1,1 @@
+Prerequisites include [English](https://www.duolingo.com/course/en/de/Lerne-Englisch), [Set Theory](https://en.wikipedia.org/wiki/Set_theory), and [Computational literacy](https://en.wikipedia.org/wiki/Computational_literacy).
