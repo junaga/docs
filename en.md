@@ -71,3 +71,17 @@ _etc. (incomplete list)_
 - https://unicode.org/glossary/
 - https://google.aip.dev/9
 - https://expressjs.com/en/resources/glossary.html
+
+## Copypastas
+
+### All Latin letters
+
+> The quick brown fox jumps over the lazy dog
+
+### Placeholder text
+
+> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat dolore facere ipsum eius obcaecati consequuntur earum illum dolorem repellat, porro maxime itaque explicabo soluta quia suscipit tempora inventore eveniet. Excepturi.
+
+### Typing Monkey
+
+> The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
