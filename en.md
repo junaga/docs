@@ -14,6 +14,22 @@
 [filesystem]: https://en.wikipedia.org/wiki/File_system
 [list_filesystems]: https://en.wikipedia.org/wiki/List_of_file_systems
 
+## Letter Case
+
+[Letter case](https://en.wikipedia.org/wiki/Letter_case), in the [Latin writing system](https://en.wikipedia.org/wiki/Latin_script), in American English, developed in [ancient Rome](https://en.wikipedia.org/wiki/Ancient_Rome), from [cursive](https://en.wikipedia.org/wiki/Cursive) handwriting with [quills](https://en.wikipedia.org/wiki/Quill).
+
+- `this is lower case`
+  - `this-is-dash-case` or kebab-case 📄
+  - `this_is_snake_case` in C and Python 🐍
+- `This Is Mixed Case` or capitalization
+  - `This is sentence case` or capitalization orthography
+    - `This is Title Case`
+  - `tHiS Is aLtErNaTiNg cAsE` in internet culture
+  - `thisIsCamelCase` in Java and JavaScript 🐪
+    - `ThisIsPascalCase`
+- `THIS IS UPPER CASE` or all caps
+  - `THIS_IS_DRAGON_CASE` or CONSTANT_CASE <!-- https://twitter.com/junaga10/status/1726406822960025789 -->
+
 ## Dictionary
 
 The 50 years culture of computers, their operating systems and applications, including the 20 years culture of the world wide web, has introduced some new semantics for a few words that overwrite American English. These words apply within software development and computer science.
@@ -74,11 +90,11 @@ _etc. (incomplete list)_
 
 ## Copypastas
 
-### All Latin letters
+### All Latin Letters
 
 > The quick brown fox jumps over the lazy dog
 
-### Placeholder text
+### Placeholder Text
 
 > Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat dolore facere ipsum eius obcaecati consequuntur earum illum dolorem repellat, porro maxime itaque explicabo soluta quia suscipit tempora inventore eveniet. Excepturi.
 
