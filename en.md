@@ -98,6 +98,10 @@ _etc. (incomplete list)_
 
 > Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat dolore facere ipsum eius obcaecati consequuntur earum illum dolorem repellat, porro maxime itaque explicabo soluta quia suscipit tempora inventore eveniet. Excepturi.
 
+### Nothing Text
+
+> Silence is golden
+
 ### Typing Monkey
 
 > The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
