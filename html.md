@@ -1,72 +1,81 @@
-[book]: https://web.dev/learn/html
-[book_hello_world]: https://web.dev/learn/html/document-structure
-[ref]: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference
-[repo]: https://github.com/whatwg/html
-[spec]: https://html.spec.whatwg.org/
+# HTML: Hypertext Markup Language
 
-[language]: https://en.wikipedia.org/wiki/Writing_system
-[lang]: https://en.wikipedia.org/wiki/IETF_language_tag
-[zuerich_german]: https://en.wikipedia.org/wiki/Z%C3%BCrich_German
-[enchanting_table]: https://minecraft.wiki/w/Enchanting_Table#Standard_Galactic_Alphabet
+## Table of Contents
+1. [Introduction](#introduction)
+2. [What is Markup?](#what-is-markup)
+3. [Hello World Example](#hello-world-example)
+4. [HTML Syntax](#html-syntax)
+5. [Key Attributes](#key-attributes)
+6. [Important Notes for Professionals](#important-notes-for-professionals)
+7. [Additional Resources](#additional-resources)
 
-[title]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title
-[h1]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
-[p]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
-[a]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
-[input]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
-[img]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
-[audio]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio
-[video]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
-[canvas]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas
+## Introduction
 
-# [/whatwg/html][repo] - [MDN][ref]
+HTML (Hypertext Markup Language) is the backbone of the web. It extends any document, in any language, with structured, multimedia, and interactive markup, transforming it into a dynamic digital document, webpage, website, or app.
 
-HTML - _Hypertext Markup Language_, extends any document, in any language, with structured ([`<title>`][title]), multimedia ([`<video>`][video]), interactive ([`<input>`][input]), markup, into a, _magic_, digital document, or (web)page, (web)site, or app.
+Key features of HTML include:
+- Structured content (e.g., [`<title>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title), [`<h1>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements))
+- Multimedia support (e.g., [`<video>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video), [`<audio>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio), [`<img>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img))
+- Interactive elements (e.g., [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input), [`<canvas>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas))
 
-### What is Markup
+## What is Markup?
 
-A markup language, is, a declarative programming language, that is a superset of [written natural language][language]. Markup languages have **semantics** because natural language does.
+A markup language is a declarative programming language that extends written natural language. Markup languages have **semantics** because they build upon the inherent meaning in natural language.
 
-### Note for pros
-
-HTML is not XHTML, XHTML is HTML in XML. HTML is not JSX, JSX is HTML in JS. HTML is not W3C/HTML, W3C made HTML4. Only WHATWG/HTML, HTML5, is HTML. Until Mozilla merges with WHATWG into HTML6.
-
-## Hello World
+## Hello World Example
 
 ```html
 <!-- ./hello-world.html -->
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-
 Hello, World!
 ```
 
-Read [web.dev/learn/html/document-structure][book_hello_world] to understand this ~~mess~~ history.
+For a detailed explanation of this structure, refer to [web.dev's HTML document structure guide](https://web.dev/learn/html/document-structure).
 
-## Syntax
+## HTML Syntax
 
-- `<!-- comment  -->` - Comment
-- `&#x` + $UNICODE + `;` - Escape
-- `<style>` - CSS
-- `<script type="module">` - JS
+Basic HTML syntax includes:
+
+- Comments: `<!-- comment -->`
+- Unicode character references: `&#x` + $UNICODE + `;`
+- Styling: `<style>` for CSS
+- Scripting: `<script type="module">` for JavaScript
+- Elements: `<tagname>content</tagname>` or `<tagname />`
+
+## Key Attributes
 
 ### `lang` Attribute
 
-The markup's language is set with the [IETF language tag][lang]. It includes fantasy languages prefixed with `x-`.
+The `lang` attribute sets the language of the markup using [IETF language tags](https://en.wikipedia.org/wiki/IETF_language_tag). It can include real and fantasy languages:
 
 - `lang="en-GB"` - British English
-- `lang="gsw-u-sd-chzh"` - [Zuerich German][zuerich_german]
-- `lang="x-sga"` - [Minecraft Enchanting Table][enchanting_table]
+- `lang="gsw-u-sd-chzh"` - [Zürich German](https://en.wikipedia.org/wiki/Z%C3%BCrich_German)
+- `lang="x-sga"` - [Minecraft Enchanting Table](https://minecraft.wiki/w/Enchanting_Table#Standard_Galactic_Alphabet)
 
 ### `class` Attribute
 
-Extends elements with semantic meaning.
+The `class` attribute extends elements with semantic meaning:
 
-- `<button class="signup">`
-- `<button class="signin">`
-- `<button class="signout">`
+```html
+<button class="signup">Sign Up</button>
+<button class="signin">Sign In</button>
+<button class="signout">Sign Out</button>
+```
 
-## See also
+## Important Notes for Professionals
 
-Learn HTML [web.dev/learn/html](https://web.dev/learn/html)
+- HTML is not XHTML (HTML in XML syntax)
+- HTML is not JSX (HTML-like syntax in JavaScript)
+- The current HTML standard is WHATWG's HTML5, not W3C's HTML4
+- A merger between Mozilla and WHATWG may lead to HTML6 in the future
+
+## Additional Resources
+
+- [Official WHATWG HTML Specification](https://html.spec.whatwg.org/)
+- [MDN Web Docs HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)
+- [web.dev Learn HTML Course](https://web.dev/learn/html)
+- [WHATWG HTML GitHub Repository](https://github.com/whatwg/html)
+
+This README provides an overview of HTML. For in-depth information and implementation details, please consult the official documentation and resources linked above.
