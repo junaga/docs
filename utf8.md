@@ -1,69 +1,94 @@
-# [`UTF-8`](https://en.wikipedia.org/wiki/UTF-8) and [unicode.org](https://unicode.org/)
+# UTF-8 and Unicode: A Comprehensive Guide
 
-Unicode - _Universal Coded Character Set_, is an [ASCII](https://en.wikipedia.org/wiki/ASCII) superset of roughly 150 thousand characters. UTF-8 - _Unicode Transformation Format 8-bit_, maps binary numbers, or bytes, to Unicode characters.
+## Table of Contents
+1. [Introduction](#introduction)
+2. [What is a Character?](#what-is-a-character)
+3. [Character Encoding](#character-encoding)
+4. [UTF-8 Explained](#utf-8-explained)
+5. [Glyph Rendering](#glyph-rendering)
+6. [Historical Context: Morse Code](#historical-context-morse-code)
+7. [Unicode Updates](#unicode-updates)
+8. [Additional Resources](#additional-resources)
 
-```sh
-# Hardware
-8 bits : 1 byte
+## Introduction
 
-# UTF-8
-1 byte  : 1 character # ASCII
-2 bytes : 1 character
-3 bytes : 1 character
-4 bytes : 1 character
+Unicode, short for Universal Coded Character Set, is a comprehensive standard for encoding and representing text in computer systems. UTF-8 (Unicode Transformation Format 8-bit) is the most widely used encoding method for Unicode characters.
 
-# Font
-X characters : 1 glyph
+> **Note:** The term "Unicode" comes from "en-cod-ing" and is not related to programming. A more fitting name might have been "Unilang" (Unified Language).
+
+## What is a Character?
+
+Characters are the fundamental elements of written language and digital communication. They include:
+
+1. Writing system characters (e.g., `1234`, `abcd`, `𓁨𓎆𓏤𓏤𓏤`)
+2. Control characters (e.g., `\n` for newline, `\b` for backspace)
+3. Signs and symbols (e.g., `✝` Latin cross, `︻デ═一` ASCII art)
+4. Optical Character Recognition (OCR) symbols
+5. Emojis
+
+## Character Encoding
+
+Character encoding is the process of converting characters into a format that computers can store and process. Since the 1970s, a byte (8 bits) has been the smallest unit of data in computer hardware. Character encodings are software libraries that perform two main functions:
+
+1. Encode: Write characters into bytes
+2. Decode: Read bytes into characters
+
+## UTF-8 Explained
+
+UTF-8 is a variable-width character encoding that can represent all Unicode characters. It uses between 1 and 4 bytes per character:
+
+```
+1 byte  : ASCII characters
+2 bytes : Additional Latin, Greek, Cyrillic, etc.
+3 bytes : Chinese, Japanese, Korean, etc.
+4 bytes : Rare characters, emojis, etc.
 ```
 
-The term _Unicode_, from _en-cod-ing_, is not related to programming, and _Unilang_, meaning _lang_ - language and _uni_ - unification or internationalization, would have been a more fitting name.
+This design allows UTF-8 to be backward compatible with ASCII while supporting the full range of Unicode characters.
 
-## What's a character
+## Glyph Rendering
 
-Characters are elements of [language](https://en.wikipedia.org/wiki/language), and invisible [control characters](https://en.wikipedia.org/wiki/C0_and_C1_control_codes).
+A font (also called a typeface or font family) is responsible for displaying characters as visible glyphs. Some interesting features of fonts include:
 
-- [writing system](https://en.wikipedia.org/wiki/Writing_system) characters
-  - `1234` and `abcd`
-  - `𓁨𓎆𓏤𓏤𓏤` `𓁨` `𓎆` `𓏤` `𓏤` `𓏤` is `1000013` in ancient egyptian
-  - control [`\n` newline](https://en.wikipedia.org/wiki/Newline), [`\b` backspace](https://en.wikipedia.org/wiki/Backspace)
-- [signs](https://en.wikipedia.org/wiki/Sign) and symbols
-  - `✝` latin cross
-  - `︻デ═一` ASCII art
-- [Optical Character Recognition](<https://en.wikipedia.org/wiki/Optical_Character_Recognition_(Unicode_block)>)
-- [emoji](https://en.wikipedia.org/wiki/Emoji)
+- Alternate glyphs for the same character (common in handwriting fonts)
+- Ligatures: Merging two or more characters into a single glyph
+- Variable fonts: Capable of animations and dynamic adjustments
 
-see: [unicode characters that are not writing system characters](https://en.wikipedia.org/wiki/Unicode_symbol)
+Popular font resources:
+- [Google Fonts](https://fonts.google.com/)
+- [Microsoft Typography](https://learn.microsoft.com/en-us/typography/)
+- [Adobe Fonts](https://fonts.adobe.com/)
 
-_If some of these error, or [mojibake](https://en.wikipedia.org/wiki/Mojibake), then you're either, not on Unicode 2022 version 15 or later, or you don't have a supporting font loaded._
+## Historical Context: Morse Code
 
-## Character encoding
+Before digital encoding, Morse code was used to transmit text over telegraph lines. It's an interesting precursor to modern character encoding:
 
-Since the 1970s, a [byte](https://en.wikipedia.org/wiki/Byte), or eight digit binary number, is the smallest amount of data that can exist in computer hardware. A character is one or more bytes. Character encodings are software libraries, to encode - _write characters into bytes_, and decode - _read bytes into characters_.
-
-1844 [Morse code](https://en.wikipedia.org/wiki/Morse_code). Latin characters => Ternary interpretation => International Morse code
-
-```sh
-SOS
-00021112000
+```
+SOS in Morse code:
 ... --- ...
 
-# There is no lowercase in Morse
-HELLO, WORLD!
-000020201002010021112110011222011211120102010021002101011
+HELLO, WORLD! in Morse code:
 .... . .-.. .-.. --- --..--   .-- --- .-. .-.. -.. -.-.--
 ```
 
-## Glyph rendering
+## Unicode Updates
 
-A [font, font family, or typeface](https://en.wikipedia.org/wiki/Typeface), displays characters as glyphs.
+Unicode is regularly updated to include new characters and writing systems. The 2022 update (Unicode 15.0) included:
 
-- [fonts.google.com](https://fonts.google.com/)
-- [Microsoft Typography](https://learn.microsoft.com/en-us/typography/)
-- [fonts.adobe.com](https://fonts.adobe.com/)
-<!-- https://www.ibm.com/plex/ -->
+- New writing systems (Kawi script, Mundari language)
+- Control characters for Egyptian hieroglyphs
+- Additional astrological symbols
+- Thousands of new CJK (Chinese, Japanese, Korean) characters
+- New emojis
 
-A font can have multiple [alternate glyphs](<https://en.wikipedia.org/wiki/Swash_(typography)>) for the same character. This is sometimes used in [handwriting fonts](https://fonts.google.com/?classification=Handwriting). A font can also merge, two or more characters, into a [ligature glyph](<https://en.wikipedia.org/wiki/Ligature_(writing)>). This is used to create [icons on the web](https://fonts.google.com/icons), and [programming ligatures](https://github.com/microsoft/cascadia-code). [Variable fonts are even capable of animations](https://fonts.google.com/knowledge/using_variable_fonts_on_the_web/interactive_animations_with_variable_fonts).
+## Additional Resources
 
-## Patch notes
+- [Official Unicode Website](https://unicode.org/)
+- [UTF-8 on Wikipedia](https://en.wikipedia.org/wiki/UTF-8)
+- [ASCII on Wikipedia](https://en.wikipedia.org/wiki/ASCII)
+- [Writing Systems](https://en.wikipedia.org/wiki/Writing_system)
+- [Emoji Charts](https://unicode.org/emoji/charts/)
 
-[Unicode 2022](https://unicode.org/versions/Unicode15.0.0/) or version 15, includes, [one](https://en.wikipedia.org/wiki/Kawi_script), [two](https://en.wikipedia.org/wiki/Mundari_language) writing systems, [control characters for egyptian hieroglyphs](https://www.unicode.org/L2/L2021/21248-egyptian-controls.pdf), [8 astrology symbols](https://www.unicode.org/charts/PDF/Unicode-15.0/U150-1F700.pdf#page=5), [4000 chinse-japanese-korean characters](https://www.unicode.org/charts/PDF/Unicode-15.0/U150-31350.pdf), [some emojis](https://unicode.org/emoji/charts-15.0/emoji-released.html), [and more](https://www.unicode.org/charts/PDF/Unicode-15.0/).
+---
+
+This README provides an overview of UTF-8 and Unicode. For specific implementation details or more in-depth information, please consult the official documentation and resources linked above.
